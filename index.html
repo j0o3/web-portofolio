@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/darkmode.css">
+
+	<title>Personal Website</title>
+</head>
+
+<body>
+	<section>
+		<nav>
+			<a href="#" class="logo">j.0o3</a>
+			<ul>
+				<li><a href="#" class="active">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+				<li>
+					<div id="container">
+				      	<label class="switch">
+				        <input type="checkbox" onclick="changeMode()">
+				        <span class="slider"></span>
+				      </label>
+			    </div>
+				</li>
+			</ul>
+
+			<!----------BARS---------->
+			<div class="toggle"></div>
+
+		</nav>
+
+		<div class="text-container">
+			<p>Hello,</p>
+			<p>I'M JIMMY</p>
+			<p>Front-End Developer<br>& Designer </p>
+			<button class="hire-btn">Hire me</button>
+			<button class="down-cv">Download CV</button>
+
+		</div>
+
+		<img src="assets/img/model2.png" class="model" alt="model">
+
+	</section>
+
+	<div class="about-container">
+		
+		<img src="assets/img/about-img1.png" alt="">
+		<div class="about-text">
+		<p>About Me</p>
+		<p>Developer Front end & Designer</p>
+		<p>Designer & Developer Front-End based in Batam, Indonesia. I strive to design joyful and timeless experiences connecting my clients website to the heart of their users</p>
+		<p>Hello, my name is Jimmy Lin. I am fresh graduate from Putra Batam Vocational High School. I have learned a lot about designing UI/UX and creating Front-End website.</p>
+		<button>Hire Me</button>
+		<button>Download CV</button>
+
+		</div>
+
+	</div>
+
+	<div class="services">
+
+		<div class="services-text">
+			<p>Skills</p>
+			<p>Qualites Requaid</p>
+			<p>Below this, i will tell the types of skills that i mastered. So that you don't worry and believe in my abilities. If you really like my work and want to make a website for a business. Feel free contact me.</p>
+		</div>
+
+		<div class="box-container">
+			<div class="box-1">
+				<span>1</span>
+				<p class="heading">Web Development</p>
+				<p class="details">I am proficient in html and css programming languages to make your website more attractive</p>
+				<button>Read More</button>
+			</div>
+
+			<div class="box-2">
+				<span>2</span>
+				<p class="heading">Photograph</p>
+				<p class="details">I can make your photos to be more interesting with using my lightroom and photoshop</p>
+				<button>Read More</button>
+			</div>
+
+
+			<div class="box-3">
+				<span>3</span>
+				<p class="heading">UI/UX Design</p>
+				<p class="details">I am able to design a beautiful website.</p>
+				<button>Read More</button>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="contact-me">
+		<p>If You Have Any Project In Your Mind</p>
+		
+		<p>Your Email</p>
+		<input type="text">
+
+		<p>Your Message</p>
+        <textarea></textarea>
+		
+
+		<button type="submit">CONTACT ME</button>
+	</div>
+
+	<footer>
+		<p>j.0o3</p>
+		<p> I strive to design joyful and timeless experiences connecting my clients website to the heart of their users</p>
+
+		<div class="social-icons">
+			<a href="#"><i class="fab fa-facebook-f"></i></a>
+			<a href="#"><i class="fab fa-twitter"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i class="fab fa-whatsapp"></i></a>
+		</div>
+		
+	</footer>
+
+	<div class="a-social-b">
+		<a href="#"><i class="fab fa-facebook-f"></i></a>
+		<a href="#"><i class="fab fa-twitter"></i></a>
+		<a href="#"><i class="fab fa-instagram"></i></a>
+		<a href="#"><i class="fab fa-whatsapp"></i></a>
+	</div>
+
+	<!------------ JQUERY --------------->
+	<script type="text/javascript" src="assets/js/JQery.js"></script>
+	
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+		$('.toggle').click(function(){
+			$('.toggle').toggleClass('active')
+			$('nav').toggleClass('active')
+		})
+	})
+		
+	</script>
+
+	 <script>
+      function changeMode() {
+         var element = document.body;
+         element.classList.toggle("dark-mode");
+      }
+    </script>
+
+</body>
+
+
+</html>
