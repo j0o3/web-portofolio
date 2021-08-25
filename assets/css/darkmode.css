@@ -1,0 +1,130 @@
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 25px;
+}
+.switch input {
+  display: none;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ccc;
+  border-radius: 34px;
+  transition: .4s;
+}
+.slider:before {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  left: 5px;
+  bottom: 5px;
+  background: #fff;
+  border-radius: 50%;
+  transition: .4s;
+}
+input:checked + .slider {
+  background: #FFD369;
+}
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.dark-mode {
+	background-color: #222831;
+}
+
+.dark-mode nav {
+	background: #393E46;
+}
+
+.dark-mode a {
+	color: #fff;
+}
+
+.dark-mode section{
+  background: #222831;
+}
+
+.dark-mode .text-container p:nth-child(1) {
+	color: #EEEEEE;
+}
+
+.dark-mode .text-container p:nth-child(2) {
+	color: #FFD369;
+}
+
+.dark-mode .text-container p:nth-child(3),
+.dark-mode .services-text p:nth-child(3),
+.dark-mode .services-text p:nth-child(4),
+.dark-mode .box-container .details,
+.dark-mode footer p {
+	color: #FFFFFF;
+}
+
+.dark-mode .down-cv {
+	background-color: #FFD369;
+	color: #111;
+}
+
+.dark-mode .about-container {
+	background-color: #393E46;
+}
+
+.dark-mode .about-text p:nth-child(1),
+.dark-mode .about-text p:nth-child(2) {
+	color: #FFD369;
+}
+
+
+.dark-mode .about-text p:nth-child(3),
+.dark-mode .about-text p:nth-child(4) {
+	color: #EEEEEE;
+} 
+
+
+.dark-mode .about-text button {
+	background-color: #FFD369;
+	color: #111;
+}
+
+.dark-mode .services {
+	background-color: #222831;
+}
+
+.dark-mode .services-text p:nth-child(1),
+.dark-mode .services-text p:nth-child(2),
+.dark-mode .box-container .heading  {
+	color: #FFD369;
+}
+
+.dark-mode .box-container button,
+.dark-mode .contact-me button {
+	background-color: #FFD369;
+	color:  #111;
+}
+
+.dark-mode .social-icons a:hover,
+.dark-mode .a-social-b a:hover {
+	background-color: #FFD369;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    transition: all ease 0.5s;
+}
+
+@media(max-width: 750px ){
+
+    .dark-mode nav ul {
+        background-color: #393E46;
+
+    }
+
+    .dark-mode .toggle {
+    	color: #FFD369;
+    }
+}
